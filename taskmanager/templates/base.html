@@ -20,7 +20,7 @@
     <title>Taskmanager</title>
 </head>
 
-<body>
+<body class="teal lighten-3">
     <header>
 
         <nav>
@@ -43,6 +43,29 @@
             <li><a href="mobile.html">Mobile</a></li>
         </ul>
     </header>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="page-footer pink accent-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+
+                    <p class="grey-text text-lighten-4">For educational purposes only.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2022 CMK task manager
+
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Compiled and minified JavaScript -->
