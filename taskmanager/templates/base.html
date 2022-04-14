@@ -13,8 +13,7 @@
 
     <!-- FontAwesome -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css">
 
     <title>Taskmanager</title>
@@ -30,17 +29,16 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home' )}}">Home</a></li>
                     <li><a href="{{ url_for('home' )}}">New Task</a></li>
-                    <li><a href="{{ url_for('home' )}}">Categories</a></li>
+                    <li><a href="{{ url_for('categories' )}}">Categories</a></li>
 
                 </ul>
             </div>
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="{{ url_for('home' )}}">Home</a></li>
+            <li><a href="{{ url_for('home' )}}">New Task</a></li>
+            <li><a href="{{ url_for('categories' )}}">Categories</a></li>
         </ul>
     </header>
 
